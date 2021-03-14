@@ -1,0 +1,188 @@
+body {
+    margin: 0;
+    font-family: 'Akaya Telivigala', cursive;
+    font-size: 18px;
+    color: #6c7279;
+    background-color: #fff;
+    -webkit-font-smoothing: antialiased;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    margin: 0 0 10px 0;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+
+/* Header
+==========================*/
+
+.header {
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    background-color: rgb(255, 238, 0);
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.header.fixed {
+    height: auto;
+    position: fixed;
+    background-color: #31344e;
+}
+
+.header.fixed .header__inner {
+    padding: 15px 0;
+    border-bottom: 0;
+}
+
+.header__inner {
+    padding: 5px 0;
+    border-bottom: 1px solid #515369;
+}
+
+
+/* Nav
+==========================*/
+
+.nav {
+    display: flex;
+    flex-wrap: wrap;
+    text-transform: uppercase;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.nav a h1 {
+    text-align: center;
+    color: rgb(181, 13, 233);
+    font-size: 22px;
+    font-weight: 700;
+    margin: 10px 20px;
+    text-decoration: none;
+}
+
+.nav__active {
+    background: rgba(0, 204, 255, 0.404);
+}
+
+
+/* Form
+===========================*/
+
+.basic {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: auto;
+    padding-top: 100px;
+    background-color: rgba(0, 174, 255, 0.247)
+}
+
+.basic__inner {
+    width: 100%;
+    max-width: 970px;
+    margin: 100px auto;
+    padding: 10px 20px;
+    text-align: center;
+    border: black 2px solid;
+}
+
+.level-input {
+    font-size: 17px;
+    width: 400px;
+}
+
+.basic__header-2 {
+    margin: 10px 0;
+}
+
+.button__submit {
+    margin-top: 20px;
+    text-align: center;
+    border-radius: 5%;
+    padding: 15px 35px;
+    background-color: rgba(157, 255, 0, 0.952);
+    font-family: 'Akaya Telivigala', cursive;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.button__submit:hover {
+    background-color: rgba(255, 0, 251, 0.524);
+}
+
+.basic__result {
+    text-align: left;
+}
+
+@media (max-width: 650px) {
+    .nav a h1 {
+        text-align: center;
+        color: rgb(181, 13, 233);
+        font-size: 20px;
+        font-weight: 700;
+        margin: 15px 11px;
+        text-decoration: none;
+    }
+    .level-input {
+        font-size: 15px;
+        width: 350px;
+    }
+}
+
+@media (max-width: 540px) {
+    .nav a h1 {
+        text-align: center;
+        color: rgb(181, 13, 233);
+        font-size: 18px;
+        font-weight: 700;
+        margin: 15px 11px;
+        text-decoration: none;
+    }
+    .level-input {
+        font-size: 15px;
+        width: 350px;
+    }
+}
+
+@media (max-width: 500px) {
+    .nav a h1 {
+        text-align: center;
+        color: rgb(181, 13, 233);
+        font-size: 14px;
+        font-weight: 700;
+        margin: 15px 7px;
+        text-decoration: none;
+    }
+    .level-input {
+        font-size: 15px;
+        width: 260px;
+    }
+}
