@@ -1,6 +1,6 @@
 <?php
 
-define("COLORS", array("red", "blue", "green", "purple", "yellow"));
+define("LEVELS", array("first-level", "second-level", "third-level", "fourth-level", "fifth-level"));
 define("FIRST_LEVEL", 1);
 define("LAST_LEVEL", 5);
 define("NOT_ENOUGH_ELEMENTS", "Пожалуйста, введите не менее 20 значений.");
